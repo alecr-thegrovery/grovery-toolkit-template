@@ -4,6 +4,7 @@ export const baseSchema = z
 	.object({
 		type: z.literal('base').optional().default('base'),
 		title: z.string(),
+		subtitle: z.string().optional(),
 		description: z.string().optional(),
 		i18nReady: z.boolean().default(false),
 		githubURL: z.string().url().optional(),
