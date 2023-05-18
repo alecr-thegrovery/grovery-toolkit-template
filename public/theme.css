@@ -72,8 +72,8 @@
 	--color-base-black: 240, 100%;
 	--color-base-gray: 250, 14%;
 	--color-base-blue: 212, 100%;
-	--color-base-blue-dark: 212, 72%;
-	--color-base-teal: 180, 80%;
+	--color-base-blue-dark: 191, 72%;
+	--color-base-teal: 172, 80%;
 	--color-base-green: 158, 79%;
 	--color-base-orange: 22, 100%;
 	--color-base-purple: 269, 79%;
@@ -110,8 +110,8 @@
 :root,
 ::backdrop {
 	color-scheme: light;
-	--theme-accent: hsla(var(--color-orange), 1);
-	--theme-accent-secondary: hsl(324, 75%, 38%);
+	--theme-accent: hsla(var(--color-blue), 1);
+	--theme-accent-secondary: hsla(var(--color-blue-dark), 1);
 	--theme-dim: hsla(var(--color-gray-70), 1);
 	--theme-dim-light: hsla(var(--color-gray-80), 1);
 	--theme-dim-lighter: hsla(var(--color-gray-90), 1);
