@@ -14,9 +14,6 @@ export default [
 	{ text: 'Editor Setup', slug: 'editor-setup', key: 'editor-setup' },
 	{ text: 'Upgrade to v2', slug: 'guides/upgrade-to/v2', key: 'guides/upgrade-to/v2' },
 
-	{ text: 'Page Templates', header: true, type: 'learn', key: 'pageTemplates' },
-	{ text: 'Basic Page Template', slug: 'page-templates/basic-page-template', key: 'page-templates/basic-page-template' },
-
 	{ text: 'Core Concepts', header: true, type: 'learn', key: 'coreConcepts' },
 	{ text: 'Why Astro', slug: 'concepts/why-astro', key: 'concepts/why-astro' },
 	{ text: 'MPA vs. SPA', slug: 'concepts/mpa-vs-spa', key: 'concepts/mpa-vs-spa' },
