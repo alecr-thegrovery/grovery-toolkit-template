@@ -1,7 +1,8 @@
 {
-  "name": "docs",
-  "version": "0.0.7",
-  "private": true,
+  "name": "Grovery-Core-Toolkit",
+  "version": "0.0.1",
+  "private": false,
+
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -28,6 +29,7 @@
     "netlify:build": "pnpm ${NETLIFY_BUILD_SCRIPT:-build}",
     "translation-status": "tsm --require=./scripts/lib/filter-warnings.cjs ./scripts/translation-status.ts"
   },
+  
   "devDependencies": {
     "@11ty/eleventy-fetch": "^3.0.0",
     "@actions/core": "^1.9.0",
