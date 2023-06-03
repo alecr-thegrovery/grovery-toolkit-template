@@ -17,4 +17,4 @@ export default {
 	//ru: 'Русский',
 } as const;
 
-export const rtlLanguages = new Set(['en']);
+export const rtlLanguages = new Set(['']);
