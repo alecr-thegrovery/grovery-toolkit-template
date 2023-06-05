@@ -103,7 +103,9 @@
     "remark-gfm": "^3.0.1",
     "remark-smartypants": "^2.0.0",
     "rollup": "^3.23.1",
-    "sass": "^1.54.3"
+    "sass": "^1.54.3",
+    "workbox-build": "^7.0.0",
+    "workbox-window": "^7.0.0"
   },
   "engines": {
     "node": "^14.15.0 || >=16.0.0",
