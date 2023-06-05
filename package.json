@@ -102,6 +102,7 @@
     "rehype-slug": "^5.0.1",
     "remark-gfm": "^3.0.1",
     "remark-smartypants": "^2.0.0",
+    "rollup": "^3.23.1",
     "sass": "^1.54.3"
   },
   "engines": {
