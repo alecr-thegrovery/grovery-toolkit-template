@@ -1,6 +1,7 @@
 import mdx from '@astrojs/mdx';
 import preact from '@astrojs/preact';
 import { defineConfig } from 'astro/config';
+import AstroPWA from '@vite-pwa/astro'
 
 import AutoImport from 'astro-auto-import';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
@@ -28,6 +29,7 @@ export default defineConfig({
 		astroAsides(),
 		astroCodeSnippets(),
 		mdx(),
+		AstroPWA(),
 	],
 	markdown: {
 		syntaxHighlight: 'shiki',
