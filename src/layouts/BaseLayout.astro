@@ -11,6 +11,7 @@ import { useTranslations } from '../i18n/util';
 import { getLanguageFromURL } from '../util';
 import { getPageCategory } from '../util/getPageCategory';
 import { pwaInfo } from 'virtual:pwa-info';
+import ReloadPrompt from '../components/ReloadPrompt.astro';
 
 export interface Props {
 	content: CollectionEntry<'docs'>['data'];
@@ -119,6 +120,7 @@ if (isFallback) canonicalURL.pathname = canonicalURL.pathname.replace(`/${lang}/
 		{ pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} /> }
 
 
+
 	</head>
 
 	<body>
@@ -146,5 +148,6 @@ if (isFallback) canonicalURL.pathname = canonicalURL.pathname.replace(`/${lang}/
 				<Footer />
 			</slot>
 		</div>
+		<ReloadPrompt />
 	</body>
 </html>
