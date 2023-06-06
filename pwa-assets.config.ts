@@ -3,7 +3,7 @@ import { defineConfig, minimalPreset as preset } from '@vite-pwa/assets-generato
 export default defineConfig({
   preset,
   images: [
-    'public/favicon.svg',
+    'public/favicon.png',
     'public/logos/grovery-logo.svg'
   ]
 })
