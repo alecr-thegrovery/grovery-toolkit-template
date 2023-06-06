@@ -26,7 +26,8 @@
     "lint:slugcheck": "node ./scripts/lint-slugcheck.mjs",
     "lint:eslint": "eslint .",
     "netlify:build": "pnpm ${NETLIFY_BUILD_SCRIPT:-build}",
-    "translation-status": "tsm --require=./scripts/lib/filter-warnings.cjs ./scripts/translation-status.ts"
+    "translation-status": "tsm --require=./scripts/lib/filter-warnings.cjs ./scripts/translation-status.ts",
+    "generate-pwa-assets": "pwa-assets-generator"
   },
   "devDependencies": {
     "@11ty/eleventy-fetch": "^3.0.0",
@@ -46,6 +47,7 @@
     "@types/node": "^18.6.4",
     "@typescript-eslint/eslint-plugin": "^5.46.1",
     "@typescript-eslint/parser": "^5.46.1",
+    "@vite-pwa/assets-generator": "^0.0.1",
     "@vite-pwa/astro": "^0.0.5",
     "astro": "^2.1.4",
     "astro-auto-import": "^0.2.1",
