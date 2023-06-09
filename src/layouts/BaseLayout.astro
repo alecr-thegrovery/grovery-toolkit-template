@@ -4,12 +4,15 @@ import Footer from '../components/Footer/Footer.astro';
 import HeadCommon from '../components/HeadCommon.astro';
 import Header from '../components/Header/Header.astro';
 import HeadSEO from '../components/HeadSEO.astro';
+import HeadAnalytics from '../components/HeadAnalytics.astro';
 import LeftSidebar from '../components/LeftSidebar/LeftSidebar.astro';
 import { normalizeLangTag } from '../i18n/bcp-normalize';
 import { rtlLanguages } from '../i18n/languages';
 import { useTranslations } from '../i18n/util';
 import { getLanguageFromURL } from '../util';
 import { getPageCategory } from '../util/getPageCategory';
+//import { pwaInfo } from 'virtual:pwa-info';
+import ReloadPrompt from '../components/ReloadPrompt.astro';
 
 export interface Props {
 	content: CollectionEntry<'docs'>['data'];
@@ -34,6 +37,7 @@ if (isFallback) canonicalURL.pathname = canonicalURL.pathname.replace(`/${lang}/
 	<head>
 		<HeadCommon />
 		<HeadSEO content={content} canonicalURL={canonicalURL} />
+		<HeadAnalytics/>
 		<title set:html={formatTitle(content)} />
 		<style>
 			.sidebar {
@@ -112,6 +116,17 @@ if (isFallback) canonicalURL.pathname = canonicalURL.pathname.replace(`/${lang}/
 				}
 			}
 		</style>
+
+		<!-- Vite PWA code | temp disable for other updates-->
+		<!-- <script src="/src/pwa.ts"></script>
+		{ pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} /> }
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+	    	<link rel="apple-touch-icon" href="/favicon.svg">
+	    	<link rel="mask-icon" href="/favicon.svg" color="#FFFFFF">
+	    	<meta name="msapplication-TileColor" content="#FFFFFF">
+	    	<meta name="theme-color" content="#ffffff"> -->
+
+
 	</head>
 
 	<body>
@@ -139,5 +154,6 @@ if (isFallback) canonicalURL.pathname = canonicalURL.pathname.replace(`/${lang}/
 				<Footer />
 			</slot>
 		</div>
+		<!-- <ReloadPrompt /> -->
 	</body>
 </html>

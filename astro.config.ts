@@ -1,6 +1,7 @@
 import mdx from '@astrojs/mdx';
 import preact from '@astrojs/preact';
 import { defineConfig } from 'astro/config';
+import AstroPWA from '@vite-pwa/astro'
 
 import AutoImport from 'astro-auto-import';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
@@ -18,7 +19,7 @@ import { theme } from './syntax-highlighting-theme';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://docs.astro.build/',
+	site: 'https://grovery-core-toolkit-staging.netlify.app/',
 	integrations: [
 		AutoImport({
 			imports: [asideAutoImport, codeSnippetAutoImport],
@@ -28,6 +29,13 @@ export default defineConfig({
 		astroAsides(),
 		astroCodeSnippets(),
 		mdx(),
+		//AstroPWA({
+		//      registerType: 'autoUpdate',
+		//      workbox: {
+		//		globPatterns: ['**/*.{js,css,html,ico,png,svg}']
+		//      }
+		//    }
+		//),
 	],
 	markdown: {
 		syntaxHighlight: 'shiki',

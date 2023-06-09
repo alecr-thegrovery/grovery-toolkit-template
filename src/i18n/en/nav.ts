@@ -100,7 +100,7 @@ export default [
 		key: 'guides/environment-variables',
 	},
 
-	{ text: 'Reference', header: true, type: 'api', key: 'reference' },
+	{ text: 'Resources', header: true, type: 'api', key: 'resources' },
 	{
 		text: 'Configuration',
 		slug: 'reference/configuration-reference',

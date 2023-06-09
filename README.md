@@ -1,70 +1,76 @@
-# Astro Docs <picture><source media="(prefers-color-scheme: dark)" srcset="https://astro.build/assets/press/astro-icon-light.png"><source media="(prefers-color-scheme: light)" srcset="https://astro.build/assets/press/astro-icon-dark.png"><img align="right" valign="center" height="79" width="63" src="https://astro.build/assets/press/astro-icon-dark.png" alt="Astro logo" /></picture>
+# README
+
+## Project-Specific Notes
+* Project-specific notes go here.
+* 
+### Server Links
+* Local: http://localhost:3000/
+* Staging: https://grovery-core-toolkit-staging.netlify.app/
+* Live: 
+
+### Code Libraries
+* Framework: [Astro Docs](https://github.com/withastro/docs)
+* 
 
 
-To all who come to this happy place: welcome.
 
-This is the repo for [docs.astro.build](https://docs.astro.build/).
-This repo contains all the source code we use to build our docs site.
+---
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/withastro/docs)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/github/withastro/docs)
-[![Open in Codeflow](https://developer.stackblitz.com/img/open_in_codeflow.svg)](https://pr.new/github.com/withastro/docs)
+## BMS ACCESS SUPPORT EXPERIENCE
 
-## We are Astro
 
-Astro is an all-in-one web framework for building fast, content-focused websites.
-We want everyone to be successful building sites, and that means helping everyone understand how Astro works.
+### Best Practices
+* Use lots of comments and documentation
+* Keep your tabs lined up correctly
+* Follow HTML5 element heirarchy
+* Double check your title tags and favicon
+* Store your local project in a regular folder with no cloud syncing - this can cause issues with running/building the project
 
-## You are Awesome
+### Initialize
+* Use Node v16.13.0 - you can just run "npm run nvm" to set
+* run 'npm install'
+* run 'npm run dev' (start and serve commands are the same as this by default, customize them if you need to)
 
-You can also help make the docs awesome.
-Your feedback is welcome.
-Your writing, editing, translating, designing, and developing skills are welcome.
-You being a part of our community is welcome.
+### Initial Server Deploy
 
-## Chat with Us
 
-You can learn more about Astro, get support, and meet other devs in [our Discord community](https://astro.build/chat).
+### Update Test/Staging Server
+This site uses Netlify's auto-deploy functions.  Every time you push to your main branch, Netlify will do a new deploy.
 
-## Raise an Issue
+### Form Configuration
 
-Is something missing?
-Is something confusing?
-Is something wrong?
 
-Creating a new Issue puts a problem on our radar!
+#### Page Links
+* http://localhost:3000/ - Index/Home
+* http://localhost:3000/posts - Blog posts directory
+* http://localhost:3000/posts/master-post - Post master template
+* http://localhost:3000/events - This is a clone of the blog pages and functionality, and can be renamed to whatever you need, or just ignored/removed.
 
-[See if your issue has already been reported](https://github.com/withastro/docs/issues), and if not, [create a new one](https://github.com/withastro/docs/issues/new/choose).
 
-## Share an Idea
+### Assets Checklist
+When you start the project, check in with the projects's Analyst for the following:
+* Font files
+* Logo(s) - as PNGs
+* Favicon - you can usually resize the logo for this
+* Figma/PSD of the design to export individual assets
+* Legal copy/links
+* Social links
 
-Could something be better?
-Want to share an idea with us?
+### Plugin/Library Links
+* [react-icons](https://react-icons.github.io/react-icons)
+* [swiper](https://swiperjs.com/)
+* [normalize.css](https://necolas.github.io/normalize.css/)
+* [react-headroom](https://kyleamathews.github.io/react-headroom/)
+* [tippy.js](https://atomiks.github.io/tippyjs/)
 
-Discussions are threads where you can offer feedback on things that might not exactly be problems to be fixed but are ideas to be explored. 
+### Coming Features
+* Contact page
+* About page - == In Progress ==
+* [Arbitrary JSON data usage](https://vercel.com/guides/loading-static-file-nextjs-api-route) - == Complete ==
+* [Category and tag filtering on blog pages](https://retool.com/blog/filtering-data-in-react-filter-map-and-for-loops/)
+* lodash - js utility library
+* browsersync - sync multiple browser windows
+* Form integration - netlify forms
 
-[Join the Docs Discussions](https://github.com/withastro/docs/discussions) where we brainstorm, ask questions, share hopes and dreams...
-
-## Make a Fix or Contribution
-
-Did you find a typo, a broken link, or another item with an obvious quick fix?
-
-If you can see what the problem is, and you know how to fix it, then you can make a PR (pull request) with the change and contribute to the docs repo yourself.
-
-> Want to make a larger contribution? Please see [CONTRIBUTING.md](CONTRIBUTING.md) first! 
-
-## Translate a Page
-
-Speak another language natively? 
-
-Join our i18n gang on Discord or jump into the PRs to help with reviewing existing draft translations!
-
-Check out the dedicated [i18n guide](TRANSLATING.md) for more details.
-
-## Next Steps
-
-- [Read the docs](https://docs.astro.build/)
-- [Raise an issue](https://github.com/withastro/docs/issues/new)
-- [Participate in a discussion](https://github.com/withastro/docs/discussions)
-- [Join the #docs channel on Discord](https://discord.gg/cZDZU3hJHc)
-
+### Article Links
+* [Set up Google Analytics with react-ga](https://medium.com/@cooperwfloyd/the-most-simple-way-to-track-next-js-page-views-in-google-analytics-8a5c6d981f43)
