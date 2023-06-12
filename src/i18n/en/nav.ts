@@ -16,6 +16,9 @@ export default [
 
 	{ text: 'Page Templates', header: true, type: 'learn', key: 'pageTemplates' },
 	{ text: 'Basic Page Template', slug: 'page-templates/basic-page-template', key: 'page-templates/basic-page-template' },
+	{ text: 'Directory Page Template', slug: 'page-templates/directory-page-template', key: 'page-templates/directory-page-template' },
+	{ text: 'Resource Page Template', slug: 'page-templates/resource-page-template', key: 'page-templates/resource-page-template' },
+	{ text: 'Tutorial Page Template', slug: 'page-templates/tutorial-page-template', key: 'page-templates/tutorial-page-template' },
 
 	{ text: 'Core Concepts', header: true, type: 'learn', key: 'coreConcepts' },
 	{ text: 'Why Astro', slug: 'concepts/why-astro', key: 'concepts/why-astro' },
