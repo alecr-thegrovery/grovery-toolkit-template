@@ -6,6 +6,7 @@ i18nReady: true
 import Button from '~/components/Button.astro'
 import ContributorList from '~/components/ContributorList.astro'
 import PackageManagerTabs from '~/components/tabs/PackageManagerTabs.astro'
+import ResourceCard from '~/components/ResourceCard.astro';
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 
@@ -22,17 +23,49 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
 
-## How to use the Toolkit
+<div class="block-wrapper" style="display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    margin: 0 auto;">
+  
+  <ResourceCard
+  icon="clipboard"  
+  title="Troubleshooting Guide: Solutions for Common Issues" 
+  description="Leaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas." 
+  tags={['Tag1', 'Tag2', 'Tag3']} 
+  viewDetailsButtonText="View Details" 
+  shareButtonText="Share" 
+/>
 
+  <ResourceCard 
+  icon="globe" 
+  title="Online Support Provider Portal" 
+  description="Leaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas." 
+  tags={['Tag1', 'Tag2', 'Tag3']} 
+  viewDetailsButtonText="View Details" 
+  shareButtonText="Share" 
+/>
 
-- **Component Islands:** A new web architecture for building faster websites.
-- **Server-first API design:** Move expensive hydration off of your users' devices.
-- **Zero JS, by default:** No JavaScript runtime overhead to slow you down.
-- **Edge-ready:** Deploy anywhere, even a global edge runtime like Deno or Cloudflare.
-- **Customizable:** Tailwind, MDX, and 100+ other integrations to choose from.
-- **UI-agnostic:** Supports React, Preact, Svelte, Vue, Solid, Lit and more.
+  <ResourceCard 
+  icon="graduation-cap" 
+  title="Product Training Module: Part 1" 
+  description="Leaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas." 
+  tags={['Tag1', 'Tag2', 'Tag3']} 
+  viewDetailsButtonText="View Details" 
+  shareButtonText="Share" 
+/>
 
-Check out our detailed [Why Astro](/en/concepts/why-astro/) breakdown to learn more about what makes Astro special. ✨
+  <ResourceCard 
+  icon="pills" 
+  title="Customer Success Stories: Inspire Trust and Confidence" 
+  description="Leaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas." 
+  tags={['Tag1', 'Tag2', 'Tag3']} 
+  viewDetailsButtonText="View Details" 
+  shareButtonText="Share" 
+/>
+        
+
+</div>
 
 
 ## Announcements
