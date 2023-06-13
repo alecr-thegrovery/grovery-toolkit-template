@@ -49,12 +49,13 @@ export default function Search({ lang = 'en', labels }: Props) {
 			initialQuery={initialQuery}
 			initialScrollY={window.scrollY}
 			onClose={onClose}
-			indexName="astro"
+			indexName="netlify_cfb53036-402d-4e61-976d-16188f596578_main_all"
 			appId="G45VMJYPMY"
+			siteId='cfb53036-402d-4e61-976d-16188f596578'
 			apiKey="2c1e8d5a165078c9fb0ffa0176b61312"
 			searchParameters={{ facetFilters: [[`lang:${lang}`]] }}
 			getMissingResultsUrl={({ query }: { query: string }) =>
-				`https://github.com/withastro/docs/issues/new?title=Missing+results+for+query+%22${encodeURIComponent(
+				`https://github.com/alecr-thegrovery/grovery-toolkit-template/issues/new?title=Missing+results+for+query+%22${encodeURIComponent(
 					query
 				)}%22`
 			}
