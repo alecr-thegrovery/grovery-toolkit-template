@@ -15,9 +15,9 @@
   [[plugins]]
     package = "@algolia/netlify-plugin-crawler"
       [plugins.inputs]
-      branches = ['main', 'feature--algolia-search']
+      branches = ['main']
       disabled = false
-      pathPrefix = "/"
+      pathPrefix = "/en/"
       customDomain = "grovery-core-toolkit-staging.netlify.app"
       renderJavaScript = true
 

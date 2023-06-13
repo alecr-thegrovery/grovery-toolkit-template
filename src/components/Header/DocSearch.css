@@ -1,6 +1,6 @@
 :root {
 	--docsearch-primary-color: var(--theme-accent-secondary);
-	--docsearch-modal-background: var(--theme-bg);
+	--docsearch-modal-background: var(--theme-bg-gradient-bottom);
 	--docsearch-footer-background: var(--theme-bg-gradient-bottom);
 	--docsearch-logo-color: var(--theme-text);
 	--docsearch-text-color: var(--theme-text);
