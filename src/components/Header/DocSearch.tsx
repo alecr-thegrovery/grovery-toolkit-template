@@ -51,7 +51,6 @@ export default function Search({ lang = 'en', labels }: Props) {
 			onClose={onClose}
 			indexName="netlify_cfb53036-402d-4e61-976d-16188f596578_main_all"
 			appId="G45VMJYPMY"
-			siteId='cfb53036-402d-4e61-976d-16188f596578'
 			apiKey="2c1e8d5a165078c9fb0ffa0176b61312"
 			searchParameters={{ facetFilters: [[`lang:${lang}`]] }}
 			getMissingResultsUrl={({ query }: { query: string }) =>
