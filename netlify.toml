@@ -12,6 +12,15 @@
   command = "NODE_OPTIONS=--max_old_space_size=8192 pnpm netlify:build"
   ignore = "git diff --quiet $COMMIT_REF $CACHED_COMMIT_REF -- /"
 
+  [[plugins]]
+    package = "@algolia/netlify-plugin-crawler"
+      [plugins.inputs]
+      branches = ['main', 'feature--algolia-search']
+      disabled = false
+      pathPrefix = "/"
+      customDomain = "grovery-core-toolkit-staging.netlify.app"
+      renderJavaScript = true
+
   [[redirects]]
     from = "/reference/renderer-reference"
     to = "/en/reference/integrations-reference"
