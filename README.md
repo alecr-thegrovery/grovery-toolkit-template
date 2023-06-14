@@ -10,21 +10,22 @@
 
 ### Code Libraries
 * Framework: [Astro Docs](https://github.com/withastro/docs)
-* 
-
 
 
 ---
 
-## BMS ACCESS SUPPORT EXPERIENCE
+## In-Progress Dev Notes
+
+Current active dev branches:
+* feature--algolia-search
+* plugins--vite-initial
+* template--placeholder-content
 
 
-### Best Practices
-* Use lots of comments and documentation
-* Keep your tabs lined up correctly
-* Follow HTML5 element heirarchy
-* Double check your title tags and favicon
-* Store your local project in a regular folder with no cloud syncing - this can cause issues with running/building the project
+---
+
+## Grovery CORE Toolkit
+
 
 ### Initialize
 * Use Node v16.13.0 - you can just run "npm run nvm" to set
