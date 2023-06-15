@@ -2,7 +2,6 @@
   "name": "Grovery-Core-Toolkit",
   "version": "0.0.1",
   "private": false,
-
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -30,7 +29,6 @@
     "translation-status": "tsm --require=./scripts/lib/filter-warnings.cjs ./scripts/translation-status.ts",
     "generate-pwa-assets": "pwa-assets-generator"
   },
-  
   "devDependencies": {
     "@11ty/eleventy-fetch": "^3.0.0",
     "@actions/core": "^1.9.0",
@@ -40,7 +38,7 @@
     "@astrojs/sitemap": "1.0.1",
     "@babel/core": "^7.18.10",
     "@docsearch/css": "^3.2.2",
-    "@docsearch/react": "^3.2.0",
+    "@docsearch/react": "3.5",
     "@types/canvas-confetti": "^1.6.0",
     "@types/chroma-js": "^2.1.4",
     "@types/hast": "^2.3.4",
@@ -108,6 +106,7 @@
     "remark-smartypants": "^2.0.0",
     "rollup": "^3.23.1",
     "sass": "^1.54.3",
+    "search-insights": "^2.6.0",
     "workbox-build": "^7.0.0",
     "workbox-window": "^7.0.0"
   },

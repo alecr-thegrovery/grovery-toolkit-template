@@ -9,7 +9,7 @@ specifiers:
   '@astrojs/sitemap': 1.0.1
   '@babel/core': ^7.18.10
   '@docsearch/css': ^3.2.2
-  '@docsearch/react': ^3.2.0
+  '@docsearch/react': '3.5'
   '@fontsource/ibm-plex-mono': ^4.5.10
   '@nanostores/preact': ^0.1.3
   '@types/canvas-confetti': ^1.6.0
@@ -67,6 +67,7 @@ specifiers:
   remark-smartypants: ^2.0.0
   rollup: ^3.23.1
   sass: ^1.54.3
+  search-insights: ^2.6.0
   simple-git: ^3.11.0
   tsm: ^2.3.0
   typescript: ^5.0.2
@@ -90,6 +91,7 @@ dependencies:
   remark-smartypants: 2.0.0
   rollup: 3.23.1
   sass: 1.54.3
+  search-insights: 2.6.0
   workbox-build: 7.0.0
   workbox-window: 7.0.0
 
@@ -102,7 +104,7 @@ devDependencies:
   '@astrojs/sitemap': 1.0.1
   '@babel/core': 7.18.10
   '@docsearch/css': 3.2.2
-  '@docsearch/react': 3.2.0_tbpndr44ulefs3hehwpi2mkf2y
+  '@docsearch/react': 3.5.0_gmrxy7csci4fbckrwa4irnwawa
   '@types/canvas-confetti': 1.6.0
   '@types/chroma-js': 2.1.4
   '@types/hast': 2.3.4
@@ -185,25 +187,48 @@ packages:
       tunnel: 0.0.6
     dev: true
 
-  /@algolia/autocomplete-core/1.7.1:
-    resolution: {integrity: sha512-eiZw+fxMzNQn01S8dA/hcCpoWCOCwcIIEUtHHdzN5TGB3IpzLbuhqFeTfh2OUhhgkE8Uo17+wH+QJ/wYyQmmzg==}
+  /@algolia/autocomplete-core/1.9.2_o3hkkk4mo4z3mjkfhuuls2xvxu:
+    resolution: {integrity: sha512-hkG80c9kx9ClVAEcUJbTd2ziVC713x9Bji9Ty4XJfKXlxlsx3iXsoNhAwfeR4ulzIUg7OE5gez0UU1zVDdG7kg==}
     dependencies:
-      '@algolia/autocomplete-shared': 1.7.1
+      '@algolia/autocomplete-plugin-algolia-insights': 1.9.2_o3hkkk4mo4z3mjkfhuuls2xvxu
+      '@algolia/autocomplete-shared': 1.9.2_7tjzpoupzrgcfw6qcsartzu7ta
+    transitivePeerDependencies:
+      - '@algolia/client-search'
+      - algoliasearch
+      - search-insights
     dev: true
 
-  /@algolia/autocomplete-preset-algolia/1.7.1_7tjzpoupzrgcfw6qcsartzu7ta:
-    resolution: {integrity: sha512-pJwmIxeJCymU1M6cGujnaIYcY3QPOVYZOXhFkWVM7IxKzy272BwCvMFMyc5NpG/QmiObBxjo7myd060OeTNJXg==}
+  /@algolia/autocomplete-plugin-algolia-insights/1.9.2_o3hkkk4mo4z3mjkfhuuls2xvxu:
+    resolution: {integrity: sha512-2LVsf4W66hVHQ3Ua/8k15oPlxjELCztbAkQm/hP42Sw+GLkHAdY1vaVRYziaWq64+Oljfg6FKkZHCdgXH+CGIA==}
     peerDependencies:
-      '@algolia/client-search': ^4.9.1
-      algoliasearch: ^4.9.1
+      search-insights: '>= 1 < 3'
     dependencies:
-      '@algolia/autocomplete-shared': 1.7.1
+      '@algolia/autocomplete-shared': 1.9.2_7tjzpoupzrgcfw6qcsartzu7ta
+      search-insights: 2.6.0
+    transitivePeerDependencies:
+      - '@algolia/client-search'
+      - algoliasearch
+    dev: true
+
+  /@algolia/autocomplete-preset-algolia/1.9.2_7tjzpoupzrgcfw6qcsartzu7ta:
+    resolution: {integrity: sha512-pqgIm2GNqtCT59Y1ICctIPrYTi34+wNPiNWEclD/yDzp5uDUUsyGe5XrUjCNyQRTKonAlmYxoaEHOn8FWgmBHA==}
+    peerDependencies:
+      '@algolia/client-search': '>= 4.9.1 < 6'
+      algoliasearch: '>= 4.9.1 < 6'
+    dependencies:
+      '@algolia/autocomplete-shared': 1.9.2_7tjzpoupzrgcfw6qcsartzu7ta
       '@algolia/client-search': 4.14.2
       algoliasearch: 4.12.2
     dev: true
 
-  /@algolia/autocomplete-shared/1.7.1:
-    resolution: {integrity: sha512-eTmGVqY3GeyBTT8IWiB2K5EuURAqhnumfktAEoHxfDY2o7vg2rSnO16ZtIG0fMgt3py28Vwgq42/bVEuaQV7pg==}
+  /@algolia/autocomplete-shared/1.9.2_7tjzpoupzrgcfw6qcsartzu7ta:
+    resolution: {integrity: sha512-XxX6YDn+7LG+SmdpXEOnj7fc3TjiVpQ0CbGhjLwrd2tYr6LVY2D4Iiu/iuYJ4shvVDWWnpwArSk0uIWC/8OPUA==}
+    peerDependencies:
+      '@algolia/client-search': '>= 4.9.1 < 6'
+      algoliasearch: '>= 4.9.1 < 6'
+    dependencies:
+      '@algolia/client-search': 4.14.2
+      algoliasearch: 4.12.2
     dev: true
 
   /@algolia/cache-browser-local-storage/4.12.2:
@@ -1711,16 +1736,16 @@ packages:
     resolution: {integrity: sha512-BxOqI5LgsIQP1odU5KMwV9yoijleOPzHL18/YvNqF9KFSGF2K/DLlYAbDQsWqd/1nbaFuSkYD/191dpMtNh4vw==}
     dev: true
 
-  /@docsearch/css/3.2.0:
-    resolution: {integrity: sha512-jnNrO2JVYYhj2pP2FomlHIy6220n6mrLn2t9v2/qc+rM7M/fbIcKMgk9ky4RN+L/maUEmteckzg6/PIYoAAXJg==}
-    dev: true
-
   /@docsearch/css/3.2.2:
     resolution: {integrity: sha512-VB0Evx4ikS1ZlW1YVUw+vI9b3H/UXMCo4W/ZWy+n56Sho4KOqyCHcINVays91TJt7HTV/CKO3FCbm2VJg5Wipw==}
     dev: true
 
-  /@docsearch/react/3.2.0_tbpndr44ulefs3hehwpi2mkf2y:
-    resolution: {integrity: sha512-ATS3w5JBgQGQF0kHn5iOAPfnCCaoLouZQMmI7oENV//QMFrYbjhUZxBU9lIwAT7Rzybud+Jtb4nG5IEjBk3Ixw==}
+  /@docsearch/css/3.5.0:
+    resolution: {integrity: sha512-Ob5FQLubplcBNihAVtriR59FRBeP8u69F6mu4L4yIr60KfsPc10bOV0DoPErJw0zF9IBN2cNLW9qdmt8zWPxyg==}
+    dev: true
+
+  /@docsearch/react/3.5.0_gmrxy7csci4fbckrwa4irnwawa:
+    resolution: {integrity: sha512-3IG8mmSMzSHNGy2S1VuPyYU9tFCxFpj5Ov8SYwsSHM4yMvFsaO9oFxXocA5lSenliIELhuOuS5+BdxHa/Qlf2A==}
     peerDependencies:
       '@types/react': '>= 16.8.0 < 19.0.0'
       react: '>= 16.8.0 < 19.0.0'
@@ -1733,12 +1758,13 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      '@algolia/autocomplete-core': 1.7.1
-      '@algolia/autocomplete-preset-algolia': 1.7.1_7tjzpoupzrgcfw6qcsartzu7ta
-      '@docsearch/css': 3.2.0
+      '@algolia/autocomplete-core': 1.9.2_o3hkkk4mo4z3mjkfhuuls2xvxu
+      '@algolia/autocomplete-preset-algolia': 1.9.2_7tjzpoupzrgcfw6qcsartzu7ta
+      '@docsearch/css': 3.5.0
       algoliasearch: 4.12.2
     transitivePeerDependencies:
       - '@algolia/client-search'
+      - search-insights
     dev: true
 
   /@emmetio/abbreviation/2.2.3:
@@ -6906,6 +6932,10 @@ packages:
   /sax/1.2.4:
     resolution: {integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==}
     dev: true
+
+  /search-insights/2.6.0:
+    resolution: {integrity: sha512-vU2/fJ+h/Mkm/DJOe+EaM5cafJv/1rRTZpGJTuFPf/Q5LjzgMDsqPdSaZsAe+GAWHHsfsu+rQSAn6c8IGtBEVw==}
+    engines: {node: '>=8.16.0'}
 
   /section-matter/1.0.0:
     resolution: {integrity: sha512-vfD3pmTzGpufjScBh50YHKzEu2lxBWhVEHsNGoEXmCmn2hKGfeNLYMzCJpe8cD7gqX7TJluOVpBkAequ6dgMmA==}
